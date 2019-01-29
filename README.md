@@ -28,4 +28,4 @@ C'est un problème avec java11, qui devrait être fixé WildFly15: Le contournem
 **useSSL=false** est là pour contourner bug "exception is thrown when a connector is closed" voir https://github.com/brettwooldridge/HikariCP/issues/1268  
 
 ## fonctionnement
-![Fonctionnement](./Model/connectionOk.svg?raw=true "Title")
+![Fonctionnement](./Model/connectionOk.svg?sanitize=true "Title")
