@@ -1,0 +1,299 @@
+format 220
+
+classinstancecanvas 128130 classinstance_ref 128002 // browser
+  xyz 25 6 2000 life_line_z 2000
+end
+classinstancecanvas 128258 classinstance_ref 128130 // 
+  xyz 193 4 2000 life_line_z 2000
+end
+classinstance 128386 class_ref 130050 // Connexion
+  name ""   xyz 373 4 2000 life_line_z 2000
+classinstance 129538 class_ref 137090 // ServletContext
+  name ""   xyz 753 4 2000 life_line_z 2000
+classinstance 130306 class_ref 128386 // DAOFactory
+  name ""   xyz 696 95 2000 life_line_z 2000
+classinstance 134274 class_ref 129282 // ConnexionForm
+  name "form"   xyz 484 340 2000 life_line_z 2000
+classinstance 135682 class_ref 129154 // UtilisateurDaoImpl
+  name ""   xyz 666 173 2000 life_line_z 2000
+classinstance 136322 class_ref 128002 // Utilisateur
+  name "utilisateur"   xyz 562 469 2000 life_line_z 2000
+classinstance 139522 class_ref 128002 // Utilisateur
+  name "UtilisateurEnBase"   xyz 634 865 2000 life_line_z 2000
+note 139778 "si MDP indentique?"
+  xyzwh 554 908 2005 105 47
+classinstance 140546 class_ref 140162 // HttpSession
+  name ""   xyz 452 922 2000 life_line_z 2000
+note 142850 "..."
+  xyzwh 266 1117 2000 35 35
+durationcanvas 128514 classinstance_ref 128130 // browser:browser
+  xyzwh 69 169 2010 11 45
+end
+durationcanvas 128642 classinstance_ref 128258 // :ApplicationServer
+  xyzwh 238 171 2010 11 78
+end
+durationcanvas 129282 classinstance_ref 128386 // :Connexion
+  xyzwh 400 230 2010 11 72
+end
+durationcanvas 132482 classinstance_ref 128258 // :ApplicationServer
+  xyzwh 238 55 2010 11 40
+end
+durationcanvas 132610 classinstance_ref 128386 // :Connexion
+  xyzwh 400 55 2010 11 28
+end
+durationcanvas 133122 classinstance_ref 129538 // :ServletContext
+  xyzwh 786 72 2010 11 70
+end
+durationcanvas 133378 classinstance_ref 128386 // :Connexion
+  xyzwh 400 95 2010 11 103
+end
+durationcanvas 133634 classinstance_ref 128130 // browser:browser
+  xyzwh 69 384 2010 11 40
+end
+durationcanvas 133762 classinstance_ref 128258 // :ApplicationServer
+  xyzwh 238 384 2010 11 29
+end
+durationcanvas 134018 classinstance_ref 128386 // :Connexion
+  xyzwh 400 402 2010 11 38
+end
+durationcanvas 134402 classinstance_ref 134274 // form:ConnexionForm
+  xyzwh 534 404 2010 11 41
+end
+durationcanvas 134658 classinstance_ref 130306 // :DAOFactory
+  xyzwh 728 145 2010 11 38
+end
+durationcanvas 135170 classinstance_ref 128258 // :ApplicationServer
+  xyzwh 238 282 2010 11 27
+end
+durationcanvas 135426 classinstance_ref 128130 // browser:browser
+  xyzwh 69 298 2010 11 25
+end
+durationcanvas 135938 classinstance_ref 128386 // :Connexion
+  xyzwh 400 513 2010 11 40
+end
+durationcanvas 136066 classinstance_ref 134274 // form:ConnexionForm
+  xyzwh 534 513 2010 11 25
+end
+durationcanvas 136450 classinstance_ref 136322 // utilisateur:Utilisateur
+  xyzwh 610 525 2010 11 25
+end
+durationcanvas 137474 classinstance_ref 134274 // form:ConnexionForm
+  xyzwh 534 564 2010 11 40
+end
+durationcanvas 137730 classinstance_ref 134274 // form:ConnexionForm
+  xyzwh 534 685 2010 11 40
+end
+durationcanvas 138370 classinstance_ref 134274 // form:ConnexionForm
+  xyzwh 534 625 2010 11 40
+end
+durationcanvas 138498 classinstance_ref 136322 // utilisateur:Utilisateur
+  xyzwh 610 625 2010 11 25
+end
+durationcanvas 138754 classinstance_ref 134274 // form:ConnexionForm
+  xyzwh 534 743 2010 11 40
+end
+durationcanvas 138882 classinstance_ref 136322 // utilisateur:Utilisateur
+  xyzwh 610 743 2010 11 25
+end
+durationcanvas 139138 classinstance_ref 134274 // form:ConnexionForm
+  xyzwh 534 826 2010 11 148
+end
+durationcanvas 139266 classinstance_ref 135682 // :UtilisateurDaoImpl
+  xyzwh 710 825 2010 11 46
+end
+durationcanvas 140290 classinstance_ref 128386 // :Connexion
+  xyzwh 400 908 2010 11 25
+end
+durationcanvas 140674 classinstance_ref 128386 // :Connexion
+  xyzwh 400 970 2010 11 64
+end
+durationcanvas 140802 classinstance_ref 140546 // :HttpSession
+  xyzwh 479 975 2010 11 29
+end
+durationcanvas 141314 classinstance_ref 140546 // :HttpSession
+  xyzwh 479 1013 2010 11 26
+end
+durationcanvas 141570 classinstance_ref 128386 // :Connexion
+  xyzwh 400 1003 2010 11 74
+end
+durationcanvas 141698 classinstance_ref 128258 // :ApplicationServer
+  xyzwh 238 1007 2010 11 79
+end
+durationcanvas 141954 classinstance_ref 128130 // browser:browser
+  xyzwh 69 1065 2010 11 85
+end
+durationcanvas 142210 classinstance_ref 128258 // :ApplicationServer
+  xyzwh 238 1052 2010 11 79
+end
+durationcanvas 142466 classinstance_ref 128258 // :ApplicationServer
+  xyzwh 238 1132 2010 11 41
+end
+durationcanvas 142594 classinstance_ref 128130 // browser:browser
+  xyzwh 69 1093 2010 11 91
+end
+msg 128770 synchronous
+  from durationcanvas_ref 128514
+  to durationcanvas_ref 128642
+  yz 178 2015 explicitmsg "HTTP GET \"/Connexion\""
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 115 164
+msg 129410 asynchronous
+  from durationcanvas_ref 128642
+  to durationcanvas_ref 129282
+  yz 230 2015 msg operation_ref 135810 // "doGet(inout request : HttpServletRequest, inout response : HttpServletResponse) : void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 311 216
+msg 132738 synchronous
+  from durationcanvas_ref 132482
+  to durationcanvas_ref 132610
+  yz 55 2025 msg operation_ref 135682 // "init() : void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 319 41
+msg 133250 synchronous
+  from durationcanvas_ref 132610
+  to durationcanvas_ref 133122
+  yz 72 2030 msg operation_ref 146050 // "getAttribute(inout name : String) : Object"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  args "daofactory"
+  label_xy 450 58
+msg 133506 return
+  from durationcanvas_ref 133122
+  to durationcanvas_ref 133378
+  yz 95 2015 explicitmsg "DAOFactory"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 478 81
+msg 133890 asynchronous
+  from durationcanvas_ref 133634
+  to durationcanvas_ref 133762
+  yz 384 2015 explicitmsg "HTTP POST \"/Connexion\""
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 108 370
+msg 134146 asynchronous
+  from durationcanvas_ref 133762
+  to durationcanvas_ref 134018
+  yz 402 2020 msg operation_ref 135938 // "doPost(inout request : HttpServletRequest, inout response : HttpServletResponse) : void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 309 388
+msg 134530 synchronous
+  from durationcanvas_ref 134018
+  to durationcanvas_ref 134402
+  yz 404 2025 msg operation_ref 132610 // "ConnexionForm(inout utilisateurDao : UtilisateurDao)"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  args "UtilisateurDaoImpl"
+  label_xy 418 389
+msg 134786 synchronous
+  from durationcanvas_ref 133378
+  to durationcanvas_ref 134658
+  yz 145 2015 msg operation_ref 130690 // "getUtilisateurDao() : UtilisateurDao"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 462 131
+msg 135298 synchronous
+  from durationcanvas_ref 129282
+  to durationcanvas_ref 135170
+  yz 282 2015 explicitmsg "\"/WEB-INF/connexion.jsp\""
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 263 268
+msg 135554 synchronous
+  from durationcanvas_ref 135170
+  to durationcanvas_ref 135426
+  yz 298 2020 explicitmsg "Formulaire de connection"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 99 284
+msg 135810 return
+  from durationcanvas_ref 134658
+  to durationcanvas_ref 133378
+  yz 172 2015 explicitmsg "UtilisateurDaoImpl"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 527 158
+msg 136194 synchronous
+  from durationcanvas_ref 135938
+  to durationcanvas_ref 136066
+  yz 513 2015 msg operation_ref 132994 // "connecterUtilisateur(inout request : HttpServletRequest) : Utilisateur"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 420 499
+msg 136578 synchronous
+  from durationcanvas_ref 136066
+  to durationcanvas_ref 136450
+  yz 525 2015 explicitmsg "new"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 566 511
+reflexivemsg 137602 synchronous
+  to durationcanvas_ref 137474
+  yz 564 2015 msg operation_ref 133122 // "validationEmail(in email : String) : void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 506 548
+reflexivemsg 137858 synchronous
+  to durationcanvas_ref 137730
+  yz 685 2015 msg operation_ref 133250 // "validationMotDePasse(in motDePasse : String) : void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 498 671
+msg 138626 synchronous
+  from durationcanvas_ref 138370
+  to durationcanvas_ref 138498
+  yz 625 2015 msg operation_ref 128258 // "setEmail(in email : String) : void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 554 611
+msg 139010 synchronous
+  from durationcanvas_ref 138754
+  to durationcanvas_ref 138882
+  yz 743 2015 msg operation_ref 128514 // "setMotDePasse(in motDePasse : String) : void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 536 729
+msg 139394 asynchronous
+  from durationcanvas_ref 139138
+  to durationcanvas_ref 139266
+  yz 826 2015 msg operation_ref 132098 // "trouver(in email : String) : Utilisateur"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  args "email"
+  label_xy 581 812
+msg 139650 return
+  from durationcanvas_ref 139266
+  to durationcanvas_ref 139138
+  yz 860 2020 explicitmsg "UtilisateurEnBase"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 560 846
+msg 140418 return
+  from durationcanvas_ref 139138
+  to durationcanvas_ref 140290
+  yz 908 2015 explicitmsg "utilisateur"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 449 894
+msg 140930 synchronous
+  from durationcanvas_ref 140674
+  to durationcanvas_ref 140802
+  yz 975 2015 msg operation_ref 151042 // "setAttribute(inout name : String, inout value : Object) : void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  args "utilisateur"
+  label_xy 389 961
+msg 141442 synchronous
+  from durationcanvas_ref 140674
+  to durationcanvas_ref 141314
+  yz 1013 2015 msg operation_ref 151042 // "setAttribute(inout name : String, inout value : Object) : void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  args "connexionForm"
+  label_xy 375 999
+msg 141826 asynchronous
+  from durationcanvas_ref 141570
+  to durationcanvas_ref 141698
+  yz 1046 2015 explicitmsg "sendRedirect( PAGE_CONNECTEE )"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 238 1032
+msg 142082 asynchronous
+  from durationcanvas_ref 141698
+  to durationcanvas_ref 141954
+  yz 1073 2015 explicitmsg "redirect"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 141 1059
+msg 142338 synchronous
+  from durationcanvas_ref 141954
+  to durationcanvas_ref 142210
+  yz 1118 2015 explicitmsg "PAGE_CONNECTEE"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 112 1104
+msg 142722 asynchronous
+  from durationcanvas_ref 142466
+  to durationcanvas_ref 142594
+  yz 1157 2015 explicitmsg "\"/WEB-INF/pageConnectee.jsp\""
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 85 1143
+end

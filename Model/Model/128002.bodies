@@ -1,0 +1,21 @@
+class Utilisateur
+!!!128002.java!!!	getId() : Long
+        return id;
+!!!128130.java!!!	setId(inout id : Long) : void
+        this.id = id;
+!!!128258.java!!!	setEmail(in email : String) : void
+        this.email = email;
+!!!128386.java!!!	getEmail() : String
+        return email;
+!!!128514.java!!!	setMotDePasse(in motDePasse : String) : void
+        this.motDePasse = motDePasse;
+!!!128642.java!!!	getMotDePasse() : String
+        return motDePasse;
+!!!128770.java!!!	setNom(in nom : String) : void
+        this.nom = nom;
+!!!128898.java!!!	getNom() : String
+        return nom;
+!!!129026.java!!!	getDateInscription() : Timestamp
+        return dateInscription;
+!!!129154.java!!!	setDateInscription(inout dateInscription : Timestamp) : void
+        this.dateInscription = dateInscription;

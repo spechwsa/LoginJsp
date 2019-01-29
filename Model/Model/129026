@@ -1,0 +1,703 @@
+format 220
+"servlets" // src::com::wsa::servlets
+  revision 1
+  modified_by 2 "william"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  objectcompositediagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  java_dir "C:\\Users\\william\\jee-formation\\LoginJsp\\src/com/wsa/servlets/"
+  java_package "com.wsa.servlets"
+  classview 128642 "servlets"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 129794 "Connectee"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@WebServlet( \"/Connectee\" )
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Servlet implementation class Connectee
+"
+      classrelation 129154 // <generalisation>
+	relation 129154 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 129154 // <generalisation>
+	  b parent class_ref 129922 // HttpServlet
+      end
+
+      attribute 131970 "serialVersionUID"
+	class_attribute const_attribute private explicit_type "long"
+	init_value " 1L"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 132098 "ATT_SESSION_USER"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"sessionUtilisateur\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 132226 "VUE"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"/WEB-INF/pageConnectee.jsp\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 132354 "VUE_HOME"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"home.jsp\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 135298 "Connectee"
+	public explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "@see HttpServlet#HttpServlet()
+"
+      end
+
+      operation 135426 "doGet"
+	protected explicit_return_type "void"
+	nparams 2
+	  param inout name "request" explicit_type "HttpServletRequest"
+	  param inout name "response" explicit_type "HttpServletResponse"
+	nexceptions 2
+	  explicit_exception "ServletException"
+	  explicit_exception "IOException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "@see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+     response)
+"
+      end
+
+      operation 135554 "doPost"
+	protected explicit_return_type "void"
+	nparams 2
+	  param inout name "request" explicit_type "HttpServletRequest"
+	  param inout name "response" explicit_type "HttpServletResponse"
+	nexceptions 2
+	  explicit_exception "ServletException"
+	  explicit_exception "IOException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+     response)
+"
+      end
+    end
+
+    class 130050 "Connexion"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@WebServlet( \"/Connexion\" )
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Servlet implementation class Connexion
+"
+      classrelation 129282 // <generalisation>
+	relation 129282 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 129282 // <generalisation>
+	  b parent class_ref 129922 // HttpServlet
+      end
+
+      attribute 132482 "CONF_DAO_FACTORY"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"daofactory\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 132610 "serialVersionUID"
+	class_attribute const_attribute private explicit_type "long"
+	init_value " 1L"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 132738 "ATT_USER"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"utilisateur\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 132866 "ATT_FORM"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"form\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 132994 "ATT_SESSION_USER"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"sessionUtilisateur\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 133122 "VUE"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"/WEB-INF/connexion.jsp\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 133250 "PAGE_CONNECTEE"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"Connectee\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      classrelation 129410 // utilisateurDao (<unidirectional association>)
+	relation 129410 --->
+	  a role_name "utilisateurDao" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 129410 // utilisateurDao (<unidirectional association>)
+	  b parent class_ref 128898 // UtilisateurDao
+      end
+
+      operation 135682 "init"
+	public explicit_return_type "void"
+	nparams 0
+	nexceptions 1
+	  explicit_exception "ServletException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 135810 "doGet"
+	protected explicit_return_type "void"
+	nparams 2
+	  param inout name "request" explicit_type "HttpServletRequest"
+	  param inout name "response" explicit_type "HttpServletResponse"
+	nexceptions 2
+	  explicit_exception "ServletException"
+	  explicit_exception "IOException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "@see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+     response)
+"
+      end
+
+      operation 135938 "doPost"
+	protected explicit_return_type "void"
+	nparams 2
+	  param inout name "request" explicit_type "HttpServletRequest"
+	  param inout name "response" explicit_type "HttpServletResponse"
+	nexceptions 2
+	  explicit_exception "ServletException"
+	  explicit_exception "IOException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+     response)
+"
+      end
+
+      classrelation 130050 // <dependency>
+	relation 130050 -_->
+	  stereotype "use"
+	  a public
+	    classrelation_ref 130050 // <dependency>
+	  b parent class_ref 129282 // ConnexionForm
+      end
+
+      classrelation 130178 // <dependency>
+	relation 130178 -_->
+	  stereotype "use"
+	  a public
+	    classrelation_ref 130178 // <dependency>
+	  b parent class_ref 128002 // Utilisateur
+      end
+    end
+
+    class 130178 "Deconnexion"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@WebServlet( \"/Deconnexion\" )
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Servlet implementation class Deconnexion
+"
+      classrelation 129538 // <generalisation>
+	relation 129538 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 129538 // <generalisation>
+	  b parent class_ref 129922 // HttpServlet
+      end
+
+      attribute 133378 "serialVersionUID"
+	class_attribute const_attribute private explicit_type "long"
+	init_value " 1L"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 133506 "VUE"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"/Ecole/Connexion\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 136066 "Deconnexion"
+	public explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "@see HttpServlet#HttpServlet()
+"
+      end
+
+      operation 136194 "doGet"
+	protected explicit_return_type "void"
+	nparams 2
+	  param inout name "request" explicit_type "HttpServletRequest"
+	  param inout name "response" explicit_type "HttpServletResponse"
+	nexceptions 2
+	  explicit_exception "ServletException"
+	  explicit_exception "IOException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "@see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+     response)
+"
+      end
+    end
+
+    class 130306 "Inscription"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@WebServlet( \"/Inscription\" )
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Servlet implementation class Inscription
+"
+      classrelation 129666 // <generalisation>
+	relation 129666 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 129666 // <generalisation>
+	  b parent class_ref 129922 // HttpServlet
+      end
+
+      attribute 133634 "CONF_DAO_FACTORY"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"daofactory\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 133762 "serialVersionUID"
+	class_attribute const_attribute private explicit_type "long"
+	init_value " 1L"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 133890 "ATT_USER"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"utilisateur\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 134018 "ATT_FORM"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"form\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 134146 "VUE"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"/WEB-INF/inscription.jsp\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      classrelation 129794 // utilisateurDao (<unidirectional association>)
+	relation 129794 --->
+	  a role_name "utilisateurDao" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 129794 // utilisateurDao (<unidirectional association>)
+	  b parent class_ref 128898 // UtilisateurDao
+      end
+
+      operation 136322 "init"
+	public explicit_return_type "void"
+	nparams 0
+	nexceptions 1
+	  explicit_exception "ServletException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 136450 "doGet"
+	protected explicit_return_type "void"
+	nparams 2
+	  param inout name "request" explicit_type "HttpServletRequest"
+	  param inout name "response" explicit_type "HttpServletResponse"
+	nexceptions 2
+	  explicit_exception "ServletException"
+	  explicit_exception "IOException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "@see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+     response)
+"
+      end
+
+      operation 136578 "doPost"
+	protected explicit_return_type "void"
+	nparams 2
+	  param inout name "request" explicit_type "HttpServletRequest"
+	  param inout name "response" explicit_type "HttpServletResponse"
+	nexceptions 2
+	  explicit_exception "ServletException"
+	  explicit_exception "IOException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+     response)
+"
+      end
+    end
+  end
+
+  deploymentview 128514 "servlets"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 129410 "Connectee"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+${definition}"
+      associated_elems
+	class_ref 129794 // Connectee
+      end
+    end
+
+    artifact 129538 "Connexion"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import com.wsa.bean.Utilisateur;
+import com.wsa.dao.DAOFactory;
+import com.wsa.dao.UtilisateurDao;
+import com.wsa.forms.ConnexionForm;
+${definition}"
+      associated_elems
+	class_ref 130050 // Connexion
+      end
+    end
+
+    artifact 129666 "Deconnexion"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+${definition}"
+      associated_elems
+	class_ref 130178 // Deconnexion
+      end
+    end
+
+    artifact 129794 "Inscription"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import com.wsa.bean.Utilisateur;
+import com.wsa.dao.DAOFactory;
+import com.wsa.dao.UtilisateurDao;
+import com.wsa.forms.InscriptionForm;
+${definition}"
+      associated_elems
+	class_ref 130306 // Inscription
+      end
+    end
+  end
+end

@@ -1,0 +1,44 @@
+format 220
+"wsa" // src::com::wsa
+  revision 1
+  modified_by 2 "william"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  objectcompositediagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  java_dir "C:\\Users\\william\\jee-formation\\LoginJsp\\src/com/wsa/"
+  java_package "com.wsa"
+  package_ref 128386 // bean
+
+  package_ref 128514 // config
+
+  package_ref 128770 // dao
+
+  package_ref 128898 // forms
+
+  package_ref 129026 // servlets
+end

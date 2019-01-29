@@ -1,0 +1,42 @@
+format 220
+"java" // src::java
+  revision 1
+  modified_by 2 "william"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  objectcompositediagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  java_dir "C:\\Program Files\\Java\\jdk1.8.0_191\\src/java/"
+  java_package "java"
+  package_ref 136066 // lang
+
+  package_ref 136194 // util
+
+  package_ref 136322 // net
+
+  package_ref 136450 // io
+end

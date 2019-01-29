@@ -1,0 +1,4 @@
+class FormValidationException
+!!!133634.java!!!	FormValidationException(in message : String)
+        super( message );
+        // TODO Auto-generated constructor stub

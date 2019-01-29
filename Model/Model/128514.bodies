@@ -1,0 +1,7 @@
+class DAOConfigurationException
+!!!129538.java!!!	DAOConfigurationException(in message : String)
+        super( message );
+!!!129666.java!!!	DAOConfigurationException(in message : String, inout cause : Throwable)
+        super( message, cause );
+!!!129794.java!!!	DAOConfigurationException(inout cause : Throwable)
+        super( cause );

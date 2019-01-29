@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Bouml (http://bouml.free.fr/) -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="625" height="887" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<g>
+	<polygon fill="#c0ffff" stroke="black" stroke-opacity="1" points="197,827 215,827 215,834 222,834 222,852 197,852 197,827" />
+	<line stroke="black" stroke-opacity="1" x1="215" y1="827" x2="222" y2="834" />
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="204" y="844">...</text>
+</g>
+<g>
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="584" cy="10" rx="7" ry="7" />
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" text-anchor="middle" x="585" y="27">:ServletContext</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="321" y="6" width="2" height="14" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="279" y="18" width="44" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="276" y="3" width="45" height="15" />
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" text-decoration="underline" text-anchor="middle" x="299" y="14">:Connexion</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="88" y="7" width="2" height="14" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="22" y="19" width="68" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="19" y="4" width="69" height="15" />
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" text-decoration="underline" text-anchor="middle" x="54" y="15">browser:browser</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="214" y="6" width="2" height="14" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="146" y="18" width="70" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="143" y="3" width="71" height="15" />
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" text-decoration="underline" text-anchor="middle" x="179" y="14">:ApplicationServer</text>
+</g>
+<g>
+	<line stroke="black" stroke-dasharray="18,6"  stroke-opacity="1" x1="398" y1="282" x2="398" y2="887" />
+</g>
+<g>
+	<line stroke="black" stroke-dasharray="18,6"  stroke-opacity="1" x1="522" y1="671" x2="522" y2="887" />
+</g>
+<g>
+	<line stroke="black" stroke-dasharray="18,6"  stroke-opacity="1" x1="358" y1="712" x2="358" y2="887" />
+</g>
+<g>
+	<line stroke="black" stroke-dasharray="18,6"  stroke-opacity="1" x1="529" y1="158" x2="529" y2="887" />
+</g>
+<g>
+	<line stroke="black" stroke-dasharray="18,6"  stroke-opacity="1" x1="455" y1="378" x2="455" y2="887" />
+</g>
+<g>
+	<line stroke="black" stroke-dasharray="18,6"  stroke-opacity="1" x1="584" y1="34" x2="584" y2="887" />
+</g>
+<g>
+	<line stroke="black" stroke-dasharray="18,6"  stroke-opacity="1" x1="180" y1="34" x2="180" y2="887" />
+</g>
+<g>
+	<line stroke="black" stroke-dasharray="18,6"  stroke-opacity="1" x1="300" y1="34" x2="300" y2="887" />
+</g>
+<g>
+	<line stroke="black" stroke-dasharray="18,6"  stroke-opacity="1" x1="542" y1="100" x2="542" y2="887" />
+</g>
+<g>
+	<line stroke="black" stroke-dasharray="18,6"  stroke-opacity="1" x1="55" y1="35" x2="55" y2="887" />
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="566" y="73" width="2" height="14" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="518" y="85" width="50" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="515" y="70" width="51" height="15" />
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" text-decoration="underline" text-anchor="middle" x="541" y="81">:DAOFactory</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="436" y="254" width="2" height="14" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="360" y="266" width="78" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="357" y="251" width="79" height="15" />
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" text-decoration="underline" text-anchor="middle" x="397" y="262">form:ConnexionForm</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="492" y="350" width="2" height="14" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="419" y="362" width="75" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="416" y="347" width="76" height="15" />
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" text-decoration="underline" text-anchor="middle" x="454" y="358">utilisateur:Utilisateur</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="573" y="643" width="2" height="14" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="472" y="655" width="103" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="469" y="640" width="104" height="15" />
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" text-decoration="underline" text-anchor="middle" x="521" y="651">UtilisateurEnBase:Utilisateur</text>
+</g>
+<g>
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="358" cy="689" rx="7" ry="7" />
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" text-anchor="middle" x="359" y="706">:HttpSession</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="562" y="131" width="2" height="14" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="496" y="143" width="68" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="493" y="128" width="69" height="15" />
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" text-decoration="underline" text-anchor="middle" x="528" y="139">:UtilisateurDaoImpl</text>
+</g>
+<g>
+	<polygon fill="#c0ffff" stroke="black" stroke-opacity="1" points="410,672 480,672 480,679 487,679 487,706 410,706 410,672" />
+	<line stroke="black" stroke-opacity="1" x1="480" y1="672" x2="487" y2="679" />
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="417" y="689">si MDP</text>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="417" y="699">indentique?</text>
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="177" y="126" width="7" height="57" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="52" y="126" width="7" height="32" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="297" y="170" width="7" height="52" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="395" y="417" width="7" height="29" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="52" y="221" width="7" height="17" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="395" y="506" width="7" height="29" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="452" y="463" width="7" height="17" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="395" y="299" width="7" height="29" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="452" y="389" width="7" height="17" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="539" y="107" width="7" height="27" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="177" y="208" width="7" height="19" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="395" y="462" width="7" height="29" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="395" y="549" width="7" height="29" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="297" y="672" width="7" height="17" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="581" y="53" width="7" height="51" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="297" y="297" width="7" height="27" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="452" y="550" width="7" height="17" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="297" y="71" width="7" height="75" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="177" y="285" width="7" height="20" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="177" y="41" width="7" height="29" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="52" y="284" width="7" height="29" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="395" y="380" width="7" height="17" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="297" y="379" width="7" height="29" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="297" y="41" width="7" height="20" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="526" y="611" width="7" height="33" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="395" y="611" width="7" height="109" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="355" y="750" width="7" height="18" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="52" y="789" width="7" height="62" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="297" y="741" width="7" height="54" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="52" y="809" width="7" height="66" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="355" y="722" width="7" height="20" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="297" y="718" width="7" height="46" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="177" y="746" width="7" height="57" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="177" y="838" width="7" height="29" />
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="177" y="779" width="7" height="57" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="403" y1="615" x2="526" y2="615" />
+	<path fill="none" stroke="black" stroke-opacity="1" d="M 522 611 L 526 615 L 522 619" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="305" y1="111" x2="539" y2="111" />
+	<polygon fill="#000000" stroke="none" points="539,111 535,107 535,115" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="185" y1="212" x2="297" y2="212" />
+	<polygon fill="#000000" stroke="none" points="185,212 189,208 189,216" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="60" y1="135" x2="177" y2="135" />
+	<polygon fill="#000000" stroke="none" points="177,135 173,131 173,139" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="60" y1="288" x2="177" y2="288" />
+	<path fill="none" stroke="black" stroke-opacity="1" d="M 173 284 L 177 288 L 173 292" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" stroke-dasharray="4,4" x1="305" y1="74" x2="581" y2="74" />
+	<path fill="none" stroke="black" stroke-opacity="1" d="M 309 70 L 305 74 L 309 78" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="185" y1="174" x2="297" y2="174" />
+	<path fill="none" stroke="black" stroke-opacity="1" d="M 293 170 L 297 174 L 293 178" />
+</g>
+<g>
+	<path fill="none" stroke="black" stroke-opacity="1" d="M 404 418 L 421 418 L 421 425 L 404 425" />
+	<polygon fill="#000000" stroke="none" points="404,425 408,429 408,421" />
+</g>
+<g>
+	<path fill="none" stroke="black" stroke-opacity="1" d="M 404 507 L 421 507 L 421 514 L 404 514" />
+	<polygon fill="#000000" stroke="none" points="404,514 408,518 408,510" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="403" y1="392" x2="452" y2="392" />
+	<polygon fill="#000000" stroke="none" points="452,392 448,388 448,396" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="305" y1="383" x2="395" y2="383" />
+	<polygon fill="#000000" stroke="none" points="395,383 391,379 391,387" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" stroke-dasharray="4,4" x1="305" y1="131" x2="539" y2="131" />
+	<path fill="none" stroke="black" stroke-opacity="1" d="M 309 127 L 305 131 L 309 135" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="403" y1="554" x2="452" y2="554" />
+	<polygon fill="#000000" stroke="none" points="452,554 448,550 448,558" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="403" y1="466" x2="452" y2="466" />
+	<polygon fill="#000000" stroke="none" points="452,466 448,462 448,470" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" stroke-dasharray="4,4" x1="305" y1="676" x2="395" y2="676" />
+	<path fill="none" stroke="black" stroke-opacity="1" d="M 309 672 L 305 676 L 309 680" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="60" y1="860" x2="177" y2="860" />
+	<path fill="none" stroke="black" stroke-opacity="1" d="M 64 856 L 60 860 L 64 864" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="305" y1="753" x2="355" y2="753" />
+	<polygon fill="#000000" stroke="none" points="355,753 351,749 351,757" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="185" y1="778" x2="297" y2="778" />
+	<path fill="none" stroke="black" stroke-opacity="1" d="M 189 774 L 185 778 L 189 782" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="60" y1="798" x2="177" y2="798" />
+	<path fill="none" stroke="black" stroke-opacity="1" d="M 64 794 L 60 798 L 64 802" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="60" y1="831" x2="177" y2="831" />
+	<polygon fill="#000000" stroke="none" points="177,831 173,827 173,835" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="305" y1="725" x2="355" y2="725" />
+	<polygon fill="#000000" stroke="none" points="355,725 351,721 351,729" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="60" y1="224" x2="177" y2="224" />
+	<polygon fill="#000000" stroke="none" points="60,224 64,220 64,228" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="185" y1="301" x2="297" y2="301" />
+	<path fill="none" stroke="black" stroke-opacity="1" d="M 293 297 L 297 301 L 293 305" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" stroke-dasharray="4,4" x1="403" y1="640" x2="526" y2="640" />
+	<path fill="none" stroke="black" stroke-opacity="1" d="M 407 636 L 403 640 L 407 644" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="185" y1="44" x2="297" y2="44" />
+	<polygon fill="#000000" stroke="none" points="297,44 293,40 293,48" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="305" y1="303" x2="395" y2="303" />
+	<polygon fill="#000000" stroke="none" points="395,303 391,299 391,307" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="305" y1="57" x2="581" y2="57" />
+	<polygon fill="#000000" stroke="none" points="581,57 577,53 577,61" />
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="65" y="852">&quot;/WEB-INF/pageConnectee.jsp&quot;</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="80" y="823">PAGE_CONNECTEE</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="370" y="503">validationMotDePasse()</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="175" y="770">sendRedirect( PAGE_CONNECTEE )</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="376" y="412">validationEmail()</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="313" y="376">connecterUtilisateur()</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="420" y="385">new</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="415" y="632">UtilisateurEnBase</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="290" y="718">setAttribute(utilisateur)</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="333" y="668">utilisateur</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="431" y="607">trouver(email)</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="398" y="546">setMotDePasse()</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="197" y="205">&quot;/WEB-INF/connexion.jsp&quot;</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="281" y="746">setAttribute(connexionForm)</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="105" y="790">redirect</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="410" y="459">setEmail()</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="76" y="217">Formulaire de connection</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="231" y="166">doGet()</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="337" y="49">getAttribute(daofactory)</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="311" y="294">ConnexionForm(UtilisateurDaoImpl)</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="236" y="37">init()</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="229" y="294">doPost()</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="389" y="123">UtilisateurDaoImpl</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="342" y="103">getUtilisateurDao()</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="86" y="128">HTTP GET &quot;/Connexion&quot;</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="354" y="66">DAOFactory</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="6" fill="#000000" xml:space="preserve" x="80" y="280">HTTP POST &quot;/Connexion&quot;</text>
+</g>
+</svg>

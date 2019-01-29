@@ -1,0 +1,23 @@
+class Inscription
+!!!136322.java!!!	init() : void
+        /* Récupération d'une instance de notre DAO Utilisateur */
+        this.utilisateurDao = ( (DAOFactory) getServletContext().getAttribute( CONF_DAO_FACTORY ) ).getUtilisateurDao();
+!!!136450.java!!!	doGet(inout request : HttpServletRequest, inout response : HttpServletResponse) : void
+        // TODO Auto-generated method stub
+        /* Affichage de la page d'inscription */
+        request.getRequestDispatcher( VUE ).forward( request, response );
+!!!136578.java!!!	doPost(inout request : HttpServletRequest, inout response : HttpServletResponse) : void
+        /* Préparation de l'objet formulaire */
+        InscriptionForm form = new InscriptionForm( utilisateurDao );
+
+        /*
+         * Appel au traitement et à la validation de la requête, et récupération
+         * du bean en résultant
+         */
+        Utilisateur utilisateur = form.inscrireUtilisateur( request );
+
+        /* Stockage du formulaire et du bean dans l'objet request */
+        request.setAttribute( ATT_FORM, form );
+        request.setAttribute( ATT_USER, utilisateur );
+
+        request.getRequestDispatcher( VUE ).forward( request, response );

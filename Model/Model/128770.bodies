@@ -1,0 +1,7 @@
+class DAOException
+!!!129922.java!!!	DAOException(in message : String)
+        super( message );
+!!!130050.java!!!	DAOException(in message : String, inout cause : Throwable)
+        super( message, cause );
+!!!130178.java!!!	DAOException(inout cause : Throwable)
+        super( cause );

@@ -1,0 +1,665 @@
+format 220
+"forms" // src::com::wsa::forms
+  revision 1
+  modified_by 2 "william"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  objectcompositediagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  java_dir "C:\\Users\\william\\jee-formation\\LoginJsp\\src/com/wsa/forms/"
+  java_package "com.wsa.forms"
+  classview 128514 "forms"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 129282 "ConnexionForm"
+      visibility public 
+      cpp_decl ""
+      final java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 130306 "CHAMP_EMAIL"
+	class_attribute const_attribute private explicit_type "String"
+	init_value " \"email\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 130434 "CHAMP_PASS"
+	class_attribute const_attribute private explicit_type "String"
+	init_value " \"motdepasse\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 130562 "ALGO_CHIFFREMENT"
+	class_attribute const_attribute private explicit_type "String"
+	init_value " \"SHA-256\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 130690 "resultat"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 130818 "erreurs"
+	private explicit_type "String, String"
+	init_value " new HashMap<String, String>()"
+	stereotype "Map"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      classrelation 128770 // utilisateurDao (<unidirectional association>)
+	relation 128770 --->
+	  a role_name "utilisateurDao" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128770 // utilisateurDao (<unidirectional association>)
+	  b parent class_ref 128898 // UtilisateurDao
+      end
+
+      operation 132610 "ConnexionForm"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "utilisateurDao" type class_ref 128898 // UtilisateurDao
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 132738 "getResultat"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 132866 "getErreurs"
+	public explicit_return_type "Map<String, String>"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 132994 "connecterUtilisateur"
+	public return_type class_ref 128002 // Utilisateur
+	nparams 1
+	  param inout name "request" explicit_type "HttpServletRequest"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 133122 "validationEmail"
+	private explicit_return_type "void"
+	nparams 1
+	  param in name "email" explicit_type "String"
+	nexceptions 1
+	  explicit_exception "Exception"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Valide l'adresse email saisie.
+"
+      end
+
+      operation 133250 "validationMotDePasse"
+	private explicit_return_type "void"
+	nparams 1
+	  param in name "motDePasse" explicit_type "String"
+	nexceptions 1
+	  explicit_exception "Exception"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Valide le mot de passe saisi.
+"
+      end
+
+      operation 133378 "setErreur"
+	private explicit_return_type "void"
+	nparams 2
+	  param in name "champ" explicit_type "String"
+	  param in name "message" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Ajoute un message correspondant au champ spécifié à la map des erreurs.
+"
+      end
+
+      operation 133506 "getValeurChamp"
+	class_operation private explicit_return_type "String"
+	nparams 2
+	  param inout name "request" explicit_type "HttpServletRequest"
+	  param in name "nomChamp" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Méthode utilitaire qui retourne null si un champ est vide, et son contenu
+sinon.
+"
+      end
+
+      classrelation 129922 // <dependency>
+	relation 129922 -_->
+	  stereotype "use"
+	  a public
+	    classrelation_ref 129922 // <dependency>
+	  b parent class_ref 128002 // Utilisateur
+      end
+    end
+
+    class 129410 "FormValidationException"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 128898 // <generalisation>
+	relation 128898 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128898 // <generalisation>
+	  b parent class_ref 129538 // Exception
+      end
+
+      attribute 130946 "serialVersionUID"
+	class_attribute const_attribute private explicit_type "long"
+	init_value " 1L"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "
+
+"
+      end
+
+      operation 133634 "FormValidationException"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "message" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 129666 "InscriptionForm"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 131074 "CHAMP_EMAIL"
+	class_attribute const_attribute private explicit_type "String"
+	init_value " \"email\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 131202 "CHAMP_PASS"
+	class_attribute const_attribute private explicit_type "String"
+	init_value " \"motdepasse\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 131330 "CHAMP_CONF"
+	class_attribute const_attribute private explicit_type "String"
+	init_value " \"confirmation\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 131458 "CHAMP_NOM"
+	class_attribute const_attribute private explicit_type "String"
+	init_value " \"nom\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 131586 "ALGO_CHIFFREMENT"
+	class_attribute const_attribute private explicit_type "String"
+	init_value " \"SHA-256\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 131714 "resultat"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 131842 "erreurs"
+	private explicit_type "String, String"
+	init_value " new HashMap<String, String>()"
+	stereotype "Map"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      classrelation 129026 // utilisateurDao (<unidirectional association>)
+	relation 129026 --->
+	  a role_name "utilisateurDao" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 129026 // utilisateurDao (<unidirectional association>)
+	  b parent class_ref 128898 // UtilisateurDao
+      end
+
+      operation 133762 "InscriptionForm"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "utilisateurDao" type class_ref 128898 // UtilisateurDao
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 133890 "getErreurs"
+	public explicit_return_type "Map<String, String>"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 134018 "getResultat"
+	public explicit_return_type "String"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 134146 "inscrireUtilisateur"
+	public return_type class_ref 128002 // Utilisateur
+	nparams 1
+	  param inout name "request" explicit_type "HttpServletRequest"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 134274 "traiterEmail"
+	private explicit_return_type "void"
+	nparams 2
+	  param in name "email" explicit_type "String"
+	  param inout name "utilisateur" type class_ref 128002 // Utilisateur
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Appel à la validation de l'adresse email reçue et initialisation de la
+proprièté email du bean
+"
+      end
+
+      operation 134402 "traiterMotsDePasse"
+	private explicit_return_type "void"
+	nparams 3
+	  param in name "motDePasse" explicit_type "String"
+	  param in name "confirmation" explicit_type "String"
+	  param inout name "utilisateur" type class_ref 128002 // Utilisateur
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Appel à la validation des mots de passe reÃ§us, chiffrement du mot de
+passe et initialisation de la proprièté motDePasse du bean
+"
+      end
+
+      operation 134530 "traiterNom"
+	private explicit_return_type "void"
+	nparams 2
+	  param in name "nom" explicit_type "String"
+	  param inout name "utilisateur" type class_ref 128002 // Utilisateur
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Appel Ã la validation du nom reçu et initialisation de la proprièté nom
+du bean
+"
+      end
+
+      operation 134658 "validationEmail"
+	private explicit_return_type "void"
+	nparams 1
+	  param in name "email" explicit_type "String"
+	nexceptions 1
+	  exception class_ref 129410 // FormValidationException
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment " Validation de l'adresse email "
+      end
+
+      operation 134786 "validationMotsDePasse"
+	private explicit_return_type "void"
+	nparams 2
+	  param in name "motDePasse" explicit_type "String"
+	  param in name "confirmation" explicit_type "String"
+	nexceptions 1
+	  exception class_ref 129410 // FormValidationException
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment " Validation des mots de passe "
+      end
+
+      operation 134914 "validationNom"
+	private explicit_return_type "void"
+	nparams 1
+	  param in name "nom" explicit_type "String"
+	nexceptions 1
+	  exception class_ref 129410 // FormValidationException
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment " Validation du nom "
+      end
+
+      operation 135042 "setErreur"
+	private explicit_return_type "void"
+	nparams 2
+	  param in name "champ" explicit_type "String"
+	  param in name "message" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Ajoute un message correspondant au champ spécifique à la map des erreurs.
+"
+      end
+
+      operation 135170 "getValeurChamp"
+	class_operation private explicit_return_type "String"
+	nparams 2
+	  param inout name "request" explicit_type "HttpServletRequest"
+	  param in name "nomChamp" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Méthode utilitaire qui retourne null si un champ est vide, et son contenu
+sinon.
+"
+      end
+    end
+  end
+
+  deploymentview 128386 "forms"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 129026 "ConnexionForm"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.util.HashMap;
+import java.util.Map;
+import javax.servlet.http.HttpServletRequest;
+import org.jasypt.util.password.ConfigurablePasswordEncryptor;
+import com.wsa.bean.Utilisateur;
+import com.wsa.dao.UtilisateurDao;
+${definition}"
+      associated_elems
+	class_ref 129282 // ConnexionForm
+      end
+    end
+
+    artifact 129154 "FormValidationException"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 129410 // FormValidationException
+      end
+    end
+
+    artifact 129282 "InscriptionForm"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.util.HashMap;
+import java.util.Map;
+import javax.servlet.http.HttpServletRequest;
+import org.jasypt.util.password.ConfigurablePasswordEncryptor;
+import com.wsa.bean.Utilisateur;
+import com.wsa.dao.DAOException;
+import com.wsa.dao.UtilisateurDao;
+${definition}"
+      associated_elems
+	class_ref 129666 // InscriptionForm
+      end
+    end
+  end
+end

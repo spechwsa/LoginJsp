@@ -1,0 +1,9 @@
+class Deconnexion
+!!!136066.java!!!	Deconnexion()
+        super();
+        // TODO Auto-generated constructor stub
+!!!136194.java!!!	doGet(inout request : HttpServletRequest, inout response : HttpServletResponse) : void
+        /* Récupération et destruction de la session en cours */
+        HttpSession session = request.getSession();
+        session.invalidate();
+        response.sendRedirect( VUE );

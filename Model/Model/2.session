@@ -1,0 +1,22 @@
+window_sizes 1259 899 450 804 853 0
+
+diagrams
+  classdiagram_ref 128002 // connection
+    1076 608 100 A4 0 0
+  active  sequencediagram_ref 134530 // connection
+    804 853 73 A4 0 0
+end
+show_stereotypes
+selected 
+  package_ref 135682 // javax
+open
+  classview_ref 128002 // bean
+  classview_ref 128386 // dao
+  classview_ref 128514 // forms
+  deploymentview_ref 128386 // forms
+  classview_ref 128258 // unknown
+  classview_ref 128770 // conexion
+  
+  package_ref 135554 // javax.servlet-3.0-sources
+end
+end

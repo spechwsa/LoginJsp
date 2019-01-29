@@ -1,0 +1,39 @@
+format 220
+
+classcanvas 128002 class_ref 130050 // Connexion
+  classdiagramsettings member_max_width 0 end
+  xyz 18 87 2000
+end
+classcanvas 128130 class_ref 129922 // HttpServlet
+  classdiagramsettings member_max_width 0 end
+  xyz 192 13 2006
+end
+classcanvas 128770 class_ref 129282 // ConnexionForm
+  classdiagramsettings member_max_width 0 end
+  xyz 207 443 2000
+end
+classcanvas 128898 class_ref 128002 // Utilisateur
+  classdiagramsettings member_max_width 0 end
+  xyz 541 50 2000
+end
+relationcanvas 128258 relation_ref 129282 // <generalisation>
+  from ref 128002 z 2007 to ref 128130
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129026 relation_ref 129922 // <dependency>
+  from ref 128770 z 2001 stereotype "<<use>>" xyz 517 379 3000 to ref 128898
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129154 relation_ref 130050 // <dependency>
+  from ref 128002 z 2001 stereotype "<<use>>" xyz 295 357 3000 to ref 128770
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129282 relation_ref 130178 // <dependency>
+  from ref 128002 z 2001 stereotype "<<use>>" xyz 476 180 3000 to ref 128898
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

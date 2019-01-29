@@ -1,0 +1,164 @@
+format 220
+"config" // src::com::wsa::config
+  revision 1
+  modified_by 2 "william"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  objectcompositediagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  java_dir "C:\\Users\\william\\jee-formation\\LoginJsp\\src/com/wsa/config/"
+  java_package "com.wsa.config"
+  classview 128130 "config"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 128130 "InitialisationDaoFactory"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "l'interface ServletContextListener sert a recevoir les notification a propos des changement de context des servlets
+contextInitialized() est appelée dès le démarrage de l'application, avant le chargement des servlets et filtres du projet.
+On vat créer une instance de DAOFactory dans cette méthode et placer cette instance dans un attribut du ServletContext 
+via sa méthode setAttribute(), qui a donc pour portée l'application entière
+
+Pour que notre Listener soit pris en compte lors du démarrage de l'application, il faut ajouter la section 
+suivante au fichier web.xml :
+<listener>
+   <listener-class>com.ecole.config.InitialisationDaoFactory</listener-class>
+</listener>	
+
+"
+      classrelation 128002 // <realization>
+	relation 128002 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128002 // <realization>
+	  b parent class_ref 128258 // ServletContextListener
+      end
+
+      attribute 128642 "ATT_DAO_FACTORY"
+	class_attribute const_attribute private explicit_type "String"
+	init_value " \"daofactory\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "comme le fichier et dans le package com.wsa.dao il va se retrouver dans
+le WAR dans WEB-INF\\classes\\com\\wsa\\dao
+
+"
+      end
+
+      classrelation 128130 // daoFactory (<unidirectional association>)
+	relation 128130 --->
+	  a role_name "daoFactory" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128130 // daoFactory (<unidirectional association>)
+	  b parent class_ref 128386 // DAOFactory
+      end
+
+      operation 129282 "contextInitialized"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "event" explicit_type "ServletContextEvent"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 129410 "contextDestroyed"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "arg0" explicit_type "ServletContextEvent"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+    end
+  end
+
+  deploymentview 128130 "config"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 128130 "InitialisationDaoFactory"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import javax.servlet.ServletContext;
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+import com.wsa.dao.DAOFactory;
+${definition}"
+      associated_elems
+	class_ref 128130 // InitialisationDaoFactory
+      end
+    end
+  end
+end

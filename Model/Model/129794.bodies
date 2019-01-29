@@ -1,0 +1,18 @@
+class Connectee
+!!!135298.java!!!	Connectee()
+        super();
+        // TODO Auto-generated constructor stub
+!!!135426.java!!!	doGet(inout request : HttpServletRequest, inout response : HttpServletResponse) : void
+        /* Récupération de la session depuis la requête */
+        HttpSession session = request.getSession();
+
+        if ( session.getAttribute( ATT_SESSION_USER ) != null ) {
+            /* Affichage de la page connectée */
+            request.getRequestDispatcher( VUE ).forward( request, response );
+        } else {
+            response.sendRedirect( VUE_HOME );
+        }
+
+!!!135554.java!!!	doPost(inout request : HttpServletRequest, inout response : HttpServletResponse) : void
+        // TODO Auto-generated method stub
+        doGet( request, response );

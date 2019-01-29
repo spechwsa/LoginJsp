@@ -1,0 +1,86 @@
+class ConnexionForm
+!!!132610.java!!!	ConnexionForm(inout utilisateurDao : UtilisateurDao)
+        this.utilisateurDao = utilisateurDao;
+!!!132738.java!!!	getResultat() : String
+        return resultat;
+!!!132866.java!!!	getErreurs() : Map<String, String>
+        return erreurs;
+!!!132994.java!!!	connecterUtilisateur(inout request : HttpServletRequest) : Utilisateur
+        /* Récupération des champs du formulaire */
+        String email = getValeurChamp( request, CHAMP_EMAIL );
+        String motDePasse = getValeurChamp( request, CHAMP_PASS );
+
+        Utilisateur utilisateur = new Utilisateur();
+
+        /* Validation du champ email. */
+        try {
+            validationEmail( email );
+        } catch ( Exception e ) {
+            setErreur( CHAMP_EMAIL, e.getMessage() );
+        }
+        utilisateur.setEmail( email );
+
+        /* Validation du champ mot de passe. */
+        try {
+            validationMotDePasse( motDePasse );
+        } catch ( Exception e ) {
+            setErreur( CHAMP_PASS, e.getMessage() );
+        }
+        utilisateur.setMotDePasse( motDePasse );
+
+        // verification existence utilisateur dans la base avec le bon mot de
+        // passe
+        Utilisateur utilisateurEnBase;
+        if ( erreurs.isEmpty() ) {
+            try {
+                utilisateurEnBase = utilisateurDao.trouver( email );
+                if ( utilisateurEnBase == null ) {
+                    setErreur( CHAMP_EMAIL, "Inscriver vous svp" );
+                } else {
+                    utilisateur.setNom( utilisateurEnBase.getNom() );
+                    /*
+                     * nous souhaiterons vérifier si un utilisateur entre le bon
+                     * mot de passe lors de sa connexion, il nous suffit de le
+                     * comparer directement à l'empreinte stockée grâce à la
+                     * méthode passwordEncryptor.checkPassword().
+                     */
+                    ConfigurablePasswordEncryptor passwordEncryptor = new ConfigurablePasswordEncryptor();
+                    passwordEncryptor.setAlgorithm( ALGO_CHIFFREMENT );
+                    if ( !passwordEncryptor.checkPassword( motDePasse, utilisateurEnBase.getMotDePasse() ) ) {
+                        setErreur( CHAMP_PASS, "Mauvaise combinaison Utilistateur et mot de passe" );
+                    }
+                }
+            } catch ( Exception e ) {
+                // TODO: handle exception
+            }
+        }
+
+        /* Initialisation du résultat global de la validation. */
+        if ( erreurs.isEmpty() ) {
+            resultat = "Succès de la connexion.";
+        } else {
+            resultat = "Échec de la connexion.";
+        }
+
+        return utilisateur;
+!!!133122.java!!!	validationEmail(in email : String) : void
+        if ( email != null && !email.matches( "([^.@]+)(\\.[^.@]+)*@([^.@]+\\.)+([^.@]+)" ) ) {
+            throw new Exception( "Merci de saisir une adresse mail valide." );
+        }
+!!!133250.java!!!	validationMotDePasse(in motDePasse : String) : void
+        if ( motDePasse != null ) {
+            if ( motDePasse.length() < 3 ) {
+                throw new Exception( "Le mot de passe doit contenir au moins 3 caractères." );
+            }
+        } else {
+            throw new Exception( "Merci de saisir votre mot de passe." );
+        }
+!!!133378.java!!!	setErreur(in champ : String, in message : String) : void
+        erreurs.put( champ, message );
+!!!133506.java!!!	getValeurChamp(inout request : HttpServletRequest, in nomChamp : String) : String
+        String valeur = request.getParameter( nomChamp );
+        if ( valeur == null || valeur.trim().length() == 0 ) {
+            return null;
+        } else {
+            return valeur;
+        }

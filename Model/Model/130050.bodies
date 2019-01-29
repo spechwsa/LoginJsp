@@ -1,0 +1,39 @@
+class Connexion
+!!!135682.java!!!	init() : void
+        /* Récupération d'une instance de notre DAO Utilisateur */
+        this.utilisateurDao = ( (DAOFactory) getServletContext().getAttribute( CONF_DAO_FACTORY ) ).getUtilisateurDao();
+!!!135810.java!!!	doGet(inout request : HttpServletRequest, inout response : HttpServletResponse) : void
+        /* Affichage de la page de connexion */
+        request.getRequestDispatcher( VUE ).forward( request, response );
+!!!135938.java!!!	doPost(inout request : HttpServletRequest, inout response : HttpServletResponse) : void
+        /* Préparation de l'objet formulaire */
+        ConnexionForm form = new ConnexionForm( utilisateurDao );
+
+        /* Traitement de la requête et récupération du bean en résultat */
+        Utilisateur utilisateur = form.connecterUtilisateur( request );
+
+        /* Récupération de la session depuis la requête */
+        HttpSession session = request.getSession();
+
+        /**
+         * Si aucune erreur de validation n'a eu lieu, alors ajout du bean
+         * Utilisateur à la session, sinon suppression du bean de la session.
+         */
+        if ( form.getErreurs().isEmpty() ) {
+            session.setAttribute( ATT_SESSION_USER, utilisateur );
+            /* Stockage du formulaire et du bean dans l'objet request */
+            request.setAttribute( ATT_FORM, form );
+            // sendRedirect vers la servlet, l'URL change dans le navigateur.
+            response.sendRedirect( PAGE_CONNECTEE );
+
+        } else {
+            session.setAttribute( ATT_SESSION_USER, null );
+            /* Stockage du formulaire et du bean dans l'objet request */
+            request.setAttribute( ATT_FORM, form ); // Pour l'affichage erreur
+            request.setAttribute( ATT_USER, utilisateur ); // Permet de rappeler
+                                                           // à l'utilisateur ce
+                                                           // qu'il a déjà
+                                                           // saisie
+            request.getRequestDispatcher( VUE ).forward( request, response );
+        }
+

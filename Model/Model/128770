@@ -1,0 +1,797 @@
+format 220
+"dao" // src::com::wsa::dao
+  revision 1
+  modified_by 2 "william"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  objectcompositediagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  java_dir "C:\\Users\\william\\jee-formation\\LoginJsp\\src/com/wsa/dao/"
+  java_package "com.wsa.dao"
+  classview 128386 "dao"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 128386 "DAOFactory"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 129026 "FICHIER_PROPERTIES"
+	class_attribute const_attribute private explicit_type "String"
+	init_value " \"/com/wsa/dao/dao.properties\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129154 "PROPERTY_URL"
+	class_attribute const_attribute private explicit_type "String"
+	init_value " \"url\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129282 "PROPERTY_DRIVER"
+	class_attribute const_attribute private explicit_type "String"
+	init_value " \"driver\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129410 "PROPERTY_NOM_UTILISATEUR"
+	class_attribute const_attribute private explicit_type "String"
+	init_value " \"nomutilisateur\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129538 "PROPERTY_MOT_DE_PASSE"
+	class_attribute const_attribute private explicit_type "String"
+	init_value " \"motdepasse\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129666 "url"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129794 "username"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129922 "password"
+	private explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 130306 "DAOFactory"
+	package explicit_return_type ""
+	nparams 3
+	  param in name "url" explicit_type "String"
+	  param in name "username" explicit_type "String"
+	  param in name "password" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 130434 "getInstance"
+	class_operation public return_type class_ref 128386 // DAOFactory
+	nparams 0
+	nexceptions 1
+	  exception class_ref 128514 // DAOConfigurationException
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Méthode chargée de récupérer les informations de connexion à la base de
+données, charger le driver JDBC et retourner une instance de la Factory
+"
+      end
+
+      operation 130562 "getConnection"
+	package explicit_return_type "Connection"
+	nparams 0
+	nexceptions 1
+	  explicit_exception "SQLException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment " Méthode chargée de fournir une connexion à la base de données "
+      end
+
+      operation 130690 "getUtilisateurDao"
+	public return_type class_ref 128898 // UtilisateurDao
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Méthodes de récupération de l'implémentation des différents DAO
+"
+      end
+    end
+
+    class 128514 "DAOConfigurationException"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Afin de cacher la nature du mode de stockage des données au reste de l'application
+liées à la configuration du DAO et du driver JDBC"
+      classrelation 128258 // <generalisation>
+	relation 128258 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128258 // <generalisation>
+	  b parent class_ref 128642 // RuntimeException
+      end
+
+      attribute 128770 "serialVersionUID"
+	class_attribute const_attribute private explicit_type "long"
+	init_value " 1L"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "
+
+"
+      end
+
+      operation 129538 "DAOConfigurationException"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "message" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Constructeurs
+"
+      end
+
+      operation 129666 "DAOConfigurationException"
+	public explicit_return_type ""
+	nparams 2
+	  param in name "message" explicit_type "String"
+	  param inout name "cause" explicit_type "Throwable"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 129794 "DAOConfigurationException"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "cause" explicit_type "Throwable"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 128770 "DAOException"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Afin de cacher la nature du mode de stockage des données au reste de l'application
+liées à l'interaction avec la base de données"
+      classrelation 128386 // <generalisation>
+	relation 128386 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128386 // <generalisation>
+	  b parent class_ref 128642 // RuntimeException
+      end
+
+      attribute 128898 "serialVersionUID"
+	class_attribute const_attribute private explicit_type "long"
+	init_value " 1L"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "
+
+"
+      end
+
+      operation 129922 "DAOException"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "message" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Constructeurs
+"
+      end
+
+      operation 130050 "DAOException"
+	public explicit_return_type ""
+	nparams 2
+	  param in name "message" explicit_type "String"
+	  param inout name "cause" explicit_type "Throwable"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 130178 "DAOException"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "cause" explicit_type "Throwable"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 128898 "UtilisateurDao"
+      visibility public stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}interface ${name}${extends} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 131714 "creer"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "utilisateur" type class_ref 128002 // Utilisateur
+	nexceptions 1
+	  exception class_ref 128770 // DAOException
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 131842 "trouver"
+	public return_type class_ref 128002 // Utilisateur
+	nparams 1
+	  param in name "email" explicit_type "String"
+	nexceptions 1
+	  exception class_ref 128770 // DAOException
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 129026 "DAOUtilitaire"
+      visibility public 
+      cpp_decl ""
+      final java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 130818 "DAOUtilitaire"
+	private explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Constructeur caché par défaut (car c'est une classe finale utilitaire,
+contenant uniquement des méthode appelées de manière statique)
+"
+      end
+
+      operation 130946 "fermetureSilencieuse"
+	class_operation public explicit_return_type "void"
+	nparams 1
+	  param inout name "resultSet" explicit_type "ResultSet"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment " Fermeture silencieuse du resultset "
+      end
+
+      operation 131074 "fermetureSilencieuse"
+	class_operation public explicit_return_type "void"
+	nparams 1
+	  param inout name "statement" explicit_type "Statement"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment " Fermeture silencieuse du statement "
+      end
+
+      operation 131202 "fermetureSilencieuse"
+	class_operation public explicit_return_type "void"
+	nparams 1
+	  param inout name "connexion" explicit_type "Connection"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment " Fermeture silencieuse de la connexion "
+      end
+
+      operation 131330 "fermeturesSilencieuses"
+	class_operation public explicit_return_type "void"
+	nparams 2
+	  param inout name "statement" explicit_type "Statement"
+	  param inout name "connexion" explicit_type "Connection"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment " Fermetures silencieuses du statement et de la connexion "
+      end
+
+      operation 131458 "fermeturesSilencieuses"
+	class_operation public explicit_return_type "void"
+	nparams 3
+	  param inout name "resultSet" explicit_type "ResultSet"
+	  param inout name "statement" explicit_type "Statement"
+	  param inout name "connexion" explicit_type "Connection"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment " Fermetures silencieuses du resultset, du statement et de la connexion "
+      end
+
+      operation 131586 "initialisationRequetePreparee"
+	class_operation public explicit_return_type "PreparedStatement"
+	nparams 4
+	  param inout name "connexion" explicit_type "Connection"
+	  param in name "sql" explicit_type "String"
+	  param inout name "returnGeneratedKeys" explicit_type "boolean"
+	  param inout name "" explicit_type "Object...objets"
+	nexceptions 1
+	  explicit_exception "SQLException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Initialise la requéte préparée basée sur passée en argument, la
+connexion, la requéte SQL, la requête doit-elle retourner un champ
+auto-généré ou non et les objets donnés.
+
+exemple : initialisationRequetePreparee( connexion, requeteSQL, true,
+nom, dateInscription ); initialisationRequetePreparee( connexion,
+requeteSQL, true, nom, prenom, dateInscription );
+
+"
+      end
+    end
+
+    class 129154 "UtilisateurDaoImpl"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 128514 // <realization>
+	relation 128514 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128514 // <realization>
+	  b parent class_ref 128898 // UtilisateurDao
+      end
+
+      attribute 130050 "SQL_SELECT_PAR_EMAIL"
+	class_attribute const_attribute private explicit_type "String"
+	init_value " \"SELECT id, email, nom, mot_de_passe, date_inscription FROM Utilisateur WHERE email = ?\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 130178 "SQL_INSERT"
+	class_attribute const_attribute private explicit_type "String"
+	init_value " \"INSERT INTO Utilisateur (email, mot_de_passe, nom, date_inscription) VALUES (?, ?, ?, NOW())\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      classrelation 128642 // daoFactory (<unidirectional association>)
+	relation 128642 --->
+	  a role_name "daoFactory" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128642 // daoFactory (<unidirectional association>)
+	  b parent class_ref 128386 // DAOFactory
+      end
+
+      operation 131970 "UtilisateurDaoImpl"
+	package explicit_return_type ""
+	nparams 1
+	  param inout name "daoFactory" type class_ref 128386 // DAOFactory
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 132098 "trouver"
+	public return_type class_ref 128002 // Utilisateur
+	nparams 1
+	  param in name "email" explicit_type "String"
+	nexceptions 1
+	  exception class_ref 128770 // DAOException
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment " Implémentation de la méthode définie dans l'interface UtilisateurDao "
+      end
+
+      operation 132226 "creer"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "utilisateur" type class_ref 128002 // Utilisateur
+	nexceptions 1
+	  exception class_ref 128770 // DAOException
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment " Implémentation de la méthode définie dans l'interface UtilisateurDao "
+      end
+
+      operation 132354 "trouver"
+	private return_type class_ref 128002 // Utilisateur
+	nparams 2
+	  param in name "sql" explicit_type "String"
+	  param inout name "" explicit_type "Object...objets"
+	nexceptions 1
+	  exception class_ref 128770 // DAOException
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Méthode générique utilisÃ©e pour retourner un utilisateur depuis la base
+de données, correspondant Ã la requète SQL donnée prenant en paramètres
+les objets passés en argument.
+"
+      end
+
+      operation 132482 "map"
+	class_operation private return_type class_ref 128002 // Utilisateur
+	nparams 1
+	  param inout name "resultSet" explicit_type "ResultSet"
+	nexceptions 1
+	  explicit_exception "SQLException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Simple méthode utilitaire permettant de faire la correspondance (le
+mapping) entre une ligne issue de la table des utilisateurs (un
+ResultSet) et un bean Utilisateur.
+"
+      end
+    end
+  end
+
+  deploymentview 128258 "dao"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 128258 "DAOConfigurationException"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 128514 // DAOConfigurationException
+      end
+    end
+
+    artifact 128386 "DAOException"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 128770 // DAOException
+      end
+    end
+
+    artifact 128514 "DAOFactory"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Properties;
+${definition}"
+      associated_elems
+	class_ref 128386 // DAOFactory
+      end
+    end
+
+    artifact 128642 "DAOUtilitaire"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+${definition}"
+      associated_elems
+	class_ref 129026 // DAOUtilitaire
+      end
+    end
+
+    artifact 128770 "UtilisateurDao"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import com.wsa.bean.Utilisateur;
+${definition}"
+      associated_elems
+	class_ref 128898 // UtilisateurDao
+      end
+    end
+
+    artifact 128898 "UtilisateurDaoImpl"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import com.wsa.bean.Utilisateur;
+import static com.wsa.dao.DAOUtilitaire.fermeturesSilencieuses;
+import static com.wsa.dao.DAOUtilitaire.initialisationRequetePreparee;
+${definition}"
+      associated_elems
+	class_ref 129154 // UtilisateurDaoImpl
+      end
+    end
+  end
+end
